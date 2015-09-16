@@ -23,11 +23,11 @@
 										<table class="form-table">
 											<tr valign="top">
 												<th scope="row">Token RD Station</th>
-												<td><input type="text" name="rd_station_token" value="<?php echo esc_attr( get_option('rd_station_token') ); ?>" /></td>
+												<td><input required="true" type="text" name="rd_station_token" value="<?php echo esc_attr( get_option('rd_station_token') ); ?>" /></td>
 											</tr>
 											<tr valign="top">
 												<th scope="row">Identificador</th>
-												<td><input type="text" name="identificador" value="<?php echo esc_attr( get_option('identificador') ); ?>" /></td>
+												<td><input required="true" type="text" name="identificador" value="<?php echo esc_attr( get_option('identificador') ); ?>" /></td>
 											</tr>				
 										</table>
 

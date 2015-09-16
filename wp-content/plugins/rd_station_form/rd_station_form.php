@@ -2,7 +2,7 @@
 /*
 Plugin Name: RD Station Form
 Plugin URI: http://exemplo.org/rd_station_form
-Description: Um plugin de comunicacao do WP com o RD Station
+Description: Um plugin que cria um form no wordpress e envia dados para o RD Station
 Version: 1.0
 Author: Ana Carolina Alves
 Author URI: http://exemplo.org

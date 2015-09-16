@@ -1,22 +1,48 @@
 <?php
+    
     function AddForm(){
         echo 
-        '<form action="' . esc_url( $_SERVER['REQUEST_URI'] ) . '" method="post">
-        Nome: <input type="text"  name="nome" ><br>
-        Email: <input type="text"  name="email"><br>
-        Empresa: <input type="text"  name="empresa"><br>
-        Cargo: <input type="text"  name="cargo"><br>
-        Telefone: <input type="text"  name="telefone"><br>
-        Celular: <input type="text"  name="celular"><br>
-        Website: <input type="text"  name="website"><br>
-        Twitter: <input type="text"  name="twitter"><br>
-        <input type="submit" name="submitt" value="Enviar"/>
+        '<form action="' . esc_url( $_SERVER['REQUEST_URI'] ) . '" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text"  name="nome" class="form-control" id="nome" required="true">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text"  name="email" class="form-control" id="email" required="true">
+        </div>
+        <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input type="text"  name="empresa" class="form-control" id="empresa">
+        </div>   
+        <div class="form-group">
+            <label for="cargo">Cargo</label>
+            <input type="text"  name="cargo" class="form-control" id="cargo">
+         </div>   
+        <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="text"  name="telefone" class="form-control" id="telefone" required="true">
+        </div>    
+        <div class="form-group">
+            <label for="celular">Celular</label>
+            <input type="text"  name="celular" class="form-control" id="celular" required="true">
+        </div>    
+        <div class="form-group">
+            <label for="website">Website</label>
+            <input type="text"  name="website" class="form-control" id="website">
+        </div>
+        <div class="form-group">
+            <label for="twitter">Twitter</label>
+            <input type="text"  name="twitter" class="form-control" id="twitter">
+        </div>
+        <button type="submit" class="btn btn-default" name="submit">Enviar</button>
+
         </form>';
     }
 
     function SendForm(){
         // if the submit button is clicked, send the information to the API
-        if ( isset( $_POST['submitt'] ) ) {
+        if ( isset( $_POST['submit'] ) ) {
 
             $api_url = "http://www.rdstation.com.br/api/1.2/conversions";
 
@@ -61,5 +87,5 @@
         return ob_get_clean();
     }    
 
-    add_shortcode( 'rd-plugin', 'LoadForm' );
+    add_shortcode( 'rdform-plugin', 'LoadForm' );
 ?>
