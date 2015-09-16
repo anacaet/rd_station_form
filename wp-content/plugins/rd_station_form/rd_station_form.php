@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: RD Station Form
-Plugin URI: http://exemplo.org/rd_station_form
+Plugin URI: ...
 Description: Um plugin que cria um form no wordpress e envia dados para o RD Station
 Version: 1.0
 Author: Ana Carolina Alves
-Author URI: http://exemplo.org
+Author URI: http://fomeoutedio.com.br
 License: GPLv2
 */
 if ( is_admin() ) {
