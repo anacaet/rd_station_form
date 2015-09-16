@@ -25,10 +25,10 @@ In addition to the plugin that provides communication of WP with RD Station, thi
 To install all the features on this repository, follow the instructions:
 1 - Download this repository content
 2 - Create a database and upload the content of the sql file under the path "sql";
-3 - Go to the file wp-config.php and change the "DB_NAME", "DB_USER" and "DB_PASSWORD" to your information;
-4 - On the wp-config.php change "WP_HOME" and "WP_SITEURL" to your information;
+3 - Go to the file wp-config.php and change the "DB_NAME", "DB_USER" and "DB_PASSWORD" to the information of your database server;
+4 - On the wp-config.php change "WP_HOME" and "WP_SITEURL" to the information about your server, like "www.example.com/wordpress";
 
-Then you will be able to follow the instructions below regarding the installation of the RD Station form plugin.
+The steps above will install the wordpress on your server, then you will be able to follow the instructions below regarding the installation of the RD Station form plugin.
 
 To install this plugin, follow the instructions:
 1 - Go to the Plugins option on the WP Admin Menu;
